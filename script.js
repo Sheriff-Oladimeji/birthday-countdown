@@ -1,6 +1,6 @@
 const timeLeft = document.getElementById('time-left')
 const travelBtn = document.getElementById('time-btn')
-let  birthday = new Date()
+let  birthday = new Date("march 17, 2023")
 const second = 1000
 const minute = second*60
 const hour = minute*60
