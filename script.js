@@ -1,11 +1,10 @@
 const timeLeft = document.getElementById('time-left')
 const travelBtn = document.getElementById('time-btn')
-let  birthday = new Date("march 17, 2023")
+let  birthday = new Date()
 const second = 1000
 const minute = second*60
 const hour = minute*60
 const day = hour *24
-const today = new Date()
 let timerId
 function countDown(){
 const today = new Date()
@@ -29,7 +28,6 @@ timeLeft.innerHTML = `${days}days ${hours}hours ${minutes}min ${seconds}seconds`
 }
  timerId = setInterval(countDown, second)
  travelBtn.addEventListener('click', function(){
- 
+  birthday = new Date()
   countDown()
-
  })
