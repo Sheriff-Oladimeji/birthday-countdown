@@ -19,7 +19,7 @@ clearInterval(timerId)
 }
 
 const days = Math.floor((timeSpan/day))
-const hours = Math.floor((timeSpan%days)/hour)
+const hours = Math.floor((timeSpan%day)/hour)
 const minutes = Math.floor(timeSpan%hour
 /minute)
 const seconds = Math.floor((timeSpan%minute)/second)
